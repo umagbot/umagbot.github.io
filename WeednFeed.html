@@ -2,41 +2,38 @@
 <!--[if IE 6]>
 <html id="ie6" lang="en-US">
 <![endif]-->
-
 <!--[if IE 7]>
 <html id="ie7" lang="en-US">
 <![endif]-->
-
 <!--[if IE 8]>
 <html id="ie8" lang="en-US">
 <![endif]-->
-
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html lang="en-US">
 <!--<![endif]-->
     <head> <!--- metadata for search engine optimization -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Franklin Ogidi">
-        <meta name="description" content="University of Manitoba Agricultural Robotics Club">
+        <meta name="description" content="University of Manitoba Agricultural Robotics Club, The agBOT Challenge">
         <meta property="og:site_name" content="University of Manitoba Agricultural Robotics, umagbot"/>
-        <meta property="og:title" content="Advisors"/>
-        <meta property="og:url" content="https://www.umagbot.github.io/advisors"/>
+        <meta property="og:title" content="The agBOT challenge"/>
+        <meta property="og:url" content="https://www.umagbot.github.io/agbot"/>
         <meta property="og:type" content="website"/>
 <!--  logo -->
         <meta property="og:image" src="images/logo.png">
         <meta property="og:image:width" content="1000"/>
         <meta property="og:image:height" content="1000"/>
-        <meta itemprop="name" content="Advisors"/>
-        <meta itemprop="url" content="https://www.umagbot.github.io/advisors"/>
+        <meta itemprop="name" content="The agBOT Challenge"/>
+        <meta itemprop="url" content="https://www.umagbot.github.io/agbot"/>
         <meta itemprop="description" content="University of Manitoba Agricultural Robotics Club"/>
-        <meta itemprop="thumbnailUrl" src="images/banners/advisors-banner.jpg"/>
+        <meta itemprop="thumbnailUrl" src="images/banners/agbot-challenge.PNG"/>
         <link rel="image_src" href="images/logo.png" />
         <meta itemprop="image" src="images/logo.png"/>
         
         
-        <title>Advisors | University of Manitoba Agricultural Robotics</title>
+        <title>The agBOT Challenge | University of Manitoba Agricultural Robotics</title>
         
         <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="images/Favicon%20Logo.png"/>
@@ -67,9 +64,9 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About<i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="agbot.html">The agBOT Challenge</a>
+                            <a class="dropdown-item active" href="agbot.html">The agBOT Challenge</a> <!-- active -->
                             <a class="dropdown-item" href="executive.html">Executive Team</a>
-                            <a class="dropdown-item active" href="advisors.html">Advisors</a> <!--active-->
+                            <a class="dropdown-item" href="advisors.html">Advisors</a>
                         </div> <!-- End dropdown menu -->
                     </li>
                     <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
@@ -78,76 +75,71 @@
                 </ul>
             </div> <!-- End navbar collapse -->
         </nav>
-<!-- END OF NAVBAR -->
-
-<!-- Banner -->
-        <section id="adv-banner">
-            <!--Negative space to show more of the banner's image-->
+        <!-- END OF NAVBAR -->
+        
+        <!-- Banner -->
+        <section id="weednfeed-banner">
+			<!--Negative space to show more of the banner's image-->
             <h1> </h1>
             <br>
             <h1> </h1>
             <br>
-            <h1> </h1>
+			<h1 id="banners_h1">Weed and Feed</h1>
             <br>
             <h1> </h1>
             <br>
             <h1> </h1>
             <!--End Negative Space-->
-        </section>
+		</section>
+        <!--End of Banner -->
         
-<!--End of Banner -->
+        <!-- Content -->
         <section class="wrapper">
             <div class="container">
-                <header class="align-center">
-                     <h2><b>The Faculty Advisory Board</b></h2>
-                        <p>The advisory board provides support to the team and serves as a critical link between the team and the University operations.</p>
-                </header>
-                
-                <div class="row">
-                    <div class="one-third column">
-                        <a href="https://www.linkedin.com/in/jason-morrison-75270a55/" target="_blank"><img class="u-max-full-width" src="images/people/Morrison.jpg"><h5 class="align-center"><b>Dr. Jason Morrison</b></h5></a>
-                        <h6>Associate Professor of Biosystems Engineering</h6>
+                <header class='align-center'><h1><b></b></h1></header> <!--Summary of agBOT Challenge-->
+                <p id="summary">The objective of the weed and feed competition, as of May 2019, is to develop an unmanned, autonomous machine that will achieve the following goals:</p><br>
+				<ul id="summary" style="list-style-type:disc;">
+					<li>Autonomously maneuver two or four 150-ft rows at a time and autonomously turn at each end. The agBOT shall make two 150-ft passes.</li>
+					<li>Autonomously observe crop plants and fertilize plants as needed.</li>
+					<li>Identify three common weeds: giant ragweed, cocklebur, and foxtail within and between rows.</li>
+					<li>Arrange for weed to be destroyed either chemically or mechanically as the agBOT moves through the field.</li>
+					<li>Provide real time observation on methods of movement, plant identification, fertilization, and/or treatment of plants back to the base station.</li>
+				</ul> 
+				<p id="summary">Teams are scored based on Mechanics, Software, Innovative Solution, and Execution.</p>
+				
+				<br><h3 class="align-center">Subsystems Overview</h3><br>
+                <div class="row uniform">
+                    <div id="zoom" class="column-four">
+						<img width="100%" src="images/macvis.jpg">
+						<h5 class="align-center"><b>Computer Vision</b></h5>
+						<br>
+						<p style="text-align: justify-all">The computer vision team subsystem is responsible for designing and implementing algorithms that will enable the machine to perform vision-related tasks, not including navigation, such as localization of crops and weeds in a field. Members of this team will be working primarily with image data and will gain experience in state-of-the-art image processing techniques like convolutional neural networks.</p>
                     </div>
-                    <!--Remove this to add advisors --
-                    <div class="one-third column">
-                        <a href="https://linkedin.com/" target="_blank"><img class="u-max-full-width" src="images/people/generic.png"><h5 class="align-center"><b>Person's name</b></h5></a>
-                        <h6>Position</h6>
+                    <div id="zoom" class="column-four">
+						<img width="100%" src="images/actuation.jpg">
+						<h5 class="align-center"><b>Mechatronics</b></h5>
+						<br>
+						<p style="text-align: justify-all">The mechatronics team deals primarily with the mechanical and electrical  components of the agBOT, including mechanical mounts and interfaces, wire harness design and electronic control systems. Members of this team will gain experience in part design and fabrication, using general-purpose computers like raspberry pi to control electro-mechanical systems, among other things.</p>
                     </div>
-                    <div class="one-third column">
-                        <a href="https://linkedin.com/" target="_blank"><img class="u-max-full-width" src="images/people/generic.png"><h5 class="align-center"><b>Person's name</b></h5></a>
-                        <h6>Position</h6>
-                    </div>-->
+                    <div id="zoom" class="column-four">
+						<img width="100%" src="images/nav.jpg">
+						<h5 class="align-center"><b>Autonomous Navigation</b></h5>
+						<br>
+						<p style="text-align: justify-all">Members of this team are responsible for developing the autonomous navigation capacity of the machine, such that the machine knows where it is in space, where it is going, how to get there and what to do if it encounters an obstacle.</p>
+                    </div>
+					<div id="zoom" class="column-four">
+						<img width="100%" src="images/machine_learning.jpg">
+						<h5 class="align-center"><b>Machine Intelligence</b></h5>
+						<br>
+						<p style="text-align: justify-all">The Machine Intelligence subsystem generates useful insights from data (excluding image data) and builds computational models to encapsulate these insights and support in-field decision-making. Members of this group will gain experience in data analysis techniques, working with databases and machine learning.</p>
+                    </div>
                 </div>
-                    
-                    <hr>
-                    
-                <!--Consultants-->
-                                    <!--Remove this to add consultants --
-
-                    <header class="align-center">
-                        <h2><b>Consultants</b></h2>
-                        <p>The consultants are experienced industry partners that provide support to the team.</p>
-                    </header>
-					<div class="row">
-                    <div class="one-third column">
-                        <a href="https://www.linkedin.com/in/jason-morrison-75270a55/" target="_blank"><img class="u-max-full-width" src="images/people/generic.png" alt="Person's name"><h5 class="align-center"><b>Scott Symons</b></h5></a>
-                        <h5></h5>
-                    </div>
-                    <div class="one-third column">
-                        <a href="https://linkedin.com/" target="_blank"><img class="u-max-full-width" src="images/people/generic.png"><h5 class="align-center"><b>Person's name</b></h5></a>
-                        <h6>Position</h6>
-                    </div>
-                    <div class="one-third column">
-                        <a href="https://linkedin.com/" target="_blank"><img class="u-max-full-width" src="images/people/generic.png"><h5 class="align-center"><b>Person's name</b></h5></a>
-                        <h6>Position</h6>
-                    </div>
-                    </div>
-                </div>-->
+                <hr>
+                <h5 class='align-center'>If you are interested in building your skills in any of these areas, please <a href="contact.html" target="_blank">sign up</a></h5>
             </div>
         </section>
-
-           
-        <!-- Footer -->
+        <!--End Content-->
+<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
 					<div class="flex">
@@ -161,14 +153,13 @@
 					</div>
 				</div>
 			</footer>
-<!-- Scripts -->
+        
+        <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
         <script src="assets/js/main.js"></script>
-        <!-- End Scripts -->
-    
+        <!-- End Scripts -->    
 
     </body>
 </html>

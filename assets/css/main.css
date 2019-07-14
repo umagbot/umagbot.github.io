@@ -56,7 +56,7 @@
 
 	.row:after, .row:before {
 		content: '';
-		display: block;
+		display: table;
 		clear: both;
 		height: 0;
 	}
@@ -223,6 +223,17 @@
 		width: 25%;
 		clear: none;
 		margin-left: 0;
+	}
+
+	.column-four {
+		float: left;
+		width: 25%;
+	}
+
+	@media screen and (max-width: 600px) {
+	  .column-four {
+		width: 100%;
+	  }
 	}
 
 	.\32 u, .\32 u\24 {
@@ -1390,7 +1401,7 @@
 	}
 
 	body {
-		background: #fff;
+		background: whitesmoke;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1476,10 +1487,11 @@
         color: black;
         font-size: 1.1em;
 	}
-#bigp {
+
+#summary {
     margin: 0 0 2em 0;
     color: black;
-    font-size: 1.15em;
+    font-size: 1.25em;
     text-align: justify;
 }
 
@@ -2548,7 +2560,7 @@
 		#banner h1 {
 			color: #fff;
 			line-height: 1em;
-			margin: 1.5em auto 0 auto;
+			margin: 0.5em auto 0 auto;
 			padding: 0;
             text-decoration: none;
             text-transform: uppercase;
@@ -2558,14 +2570,28 @@
             max-width: 85%;
 		}
 
-		.banner_p {
-            text-decoration: none;
-			margin: 2em auto 0 auto;
-            max-width: 75%;
-            position: relative;
-            font-size: 1.15em;
+		#banner h2 {
+			color: gainsboro;
+			margin: 2.0em auto 0 auto;
+			padding: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.01em;
             text-align: center;
 		}
+
+#banners_h1 {
+	color: #fff;
+	line-height: 1em;
+	margin: 0.5em auto 0 auto;
+	padding: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	text-align: center;
+	font-weight: 550;
+	max-width: 85%;
+}
+
 .banner_button {
     background-color:#4C721D;
     border-radius: 5px;
@@ -2580,24 +2606,6 @@
     transform: scale(1.2);
     background-color: #4C721D;
 
-}
-
-/* Banner Caption */
-#bannercaption{
-    position: relative;
-    top: 1px;
-    background-color:#4C721D;
-    padding: 1.0em 1.5em 1.5em 1.0em;
-    
-}
-
-#bannercaption h3{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    text-align: center;
-    font-weight: bold;
 }
 
 #adv-banner {
@@ -2635,6 +2643,39 @@
 		border-top: 0.5em solid #5385c1;
 	}
 
+#weednfeed-banner {
+        background-image: url('../../images/banners/agBOT-team-13.jpg');
+		padding: 12em 0 10em 0;
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		text-align: center;
+		border-top: 0.1em solid #5385c1;
+        z-index: auto;
+	}
+
+#soil_sampling-banner {
+        background-image: url('../../images/banners/soil_sampling.jpg');
+		padding: 10em 0 10em 0;
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		text-align: center;
+		border-top: 0.5em solid #5385c1;
+	}
+
+#greenvision-banner {
+        background-image: url('../../images/banners/Greenhouse_4.jpg');
+		padding: 10em 0 10em 0;
+		background-size: cover;
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		text-align: center;
+		border-top: 0.5em solid #5385c1;
+	}
 #get-involved-banner {
         background-image: url('../../images/banners/get-involved-banner.jpg');
 		padding: 12em 0 10em 0;
